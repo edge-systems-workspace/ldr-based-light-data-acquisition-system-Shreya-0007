@@ -15,3 +15,7 @@
 // TODO 1:
 // Define LDR analog pin (Use A0)
 const int ldrPin = A0;
+
+// TODO 2:
+// Create variable to store sensor reading
+int ldrValue = 0;
