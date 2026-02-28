@@ -30,3 +30,14 @@ void setup() {
     // Print system initialization message
     Serial.println("LDR Light Detection System Initialized...");
 }
+
+void loop() {
+
+    // TODO 5:
+    // Read analog value from LDR
+    ldrValue = analogRead(ldrPin);
+
+    // TODO 6:
+    // Print raw ADC value
+    Serial.print("LDR Value: ");
+    Serial.println(ldrValue);
