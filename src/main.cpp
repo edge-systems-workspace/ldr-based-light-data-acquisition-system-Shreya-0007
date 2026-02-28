@@ -41,3 +41,16 @@ void loop() {
     // Print raw ADC value
     Serial.print("LDR Value: ");
     Serial.println(ldrValue);
+
+    // TODO 7:
+    // Apply threshold logic (Bright / Dark detection)
+
+    if (ldrValue < 500) {
+        Serial.println("Status: BRIGHT");
+    } else {
+        Serial.println("Status: DARK");
+    }
+
+    // Small delay for stability
+    delay(1000);
+}
